@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Exam 2 Review</title>
+  </head>
+
+  <body>
+    <h1>CS64 Spring 2018: Midterm Exam# 2 Review --- Solutions</h1>
+    <p>
+      The exam will consist of short-answer questions and writing your own code.
+    </p>
+    <p>
+      The review below, <b>in addition to Lab 4, Lab 5, and Lab 6</b>, are all fair game for the exam.
+      For the labs, this includes <b>both</b> code you've written and questions you've answered.
+    </p>
+
+    <h2>Memory-Intensive MIPS Assembly</h2>
+    <ol>
+      <li>
+        Translate the following C code to assembly.
+        The variables used refer to registers which should be used.
+        You may assume that any registers used without initialization have already been initialized for you.
+        You do not need to worry about saving or restoring registers.
+        If you need additional registers than what are used below, use registers <code>$t0 - $t9</code>.
+        You may assume that the C types <code>int</code>, <code>unsigned int</code>, and <code>int*</code> are each 32 bits long.
+<pre>
+int s0 = 0;
+unsigned int s1;
+// `s1` and `s2` are of type `unsigned int`
+// `s3` is of type `int*`
+for (s1 = 0; s1 &lt; s2; s1++) {
+  s0 = s0 + s3[s1];
+}
+</pre>
+<pre>
+  move $s0, $zero
+  move $s1, $zero
+loop:
+  slt $t0, $s1, $s2
+  beq $t0, $zero, after_loop
+  sll $t1, $s1, 2
+  addu $t2, $t1, $s3
+  lw $t3, 0($t2)
+  addu $s0, $s0, $t3
+  addiu $s1, $s1, 1
+  j loop
+after_loop:
+</pre>  
+      </li>
+      <li>
+        Translate the following C code to assembly.
+        The variables used refer to registers which should be used.
+        You may assume that any registers used without initialization have already been initialized for you.
+        You do not need to worry about saving or restoring registers.
+        If you need additional registers than what are used below, use registers <code>$t0 - $t9</code>.
+        You may assume that the C types <code>int</code>, <code>unsigned int</code>, and <code>int*</code> are each 32 bits long.
+        You may assume that <code>array</code> was declared globally, and it is an array of <code>unsigned int</code>.
+<pre>
+array[0] = 0;
+array[1] = 1;  
+unsigned int s0;
+for (s0 = 2; s0 &lt;= s1; s0++) {
+  array[s0] = array[s0 - 1] + array[s0 - 2];
+}
+s2 = array[s1];
+</pre>
+<pre>
+  la $t0, array
+  sw $zero, 0($t0)
+  li $t1, 1
+  sw $t1, 4($t0)
+  li $s0, 2
+loop:
+  slt $t1, $s1, $s0
+  bne $t1, $zero, after_loop
+  sll $t2, $s0, 2
+  addu $t3, $t0, $t2
+  lw $t4, -4($t3)
+  lw $t5, -8($t3)
+  addu $t6, $t4, $t5
+  sw $t6, 0($t3)
+  addiu $s0, $s0, 1
+  j loop
+after_loop:
+  sll $t1, $s1, 2
+  addu $t2, $t1, $t0
+  lw $s2, 0($t2)
+</pre>
+      </li>
+      <li>
+        Consider the assembly code below, which is intended to iterate through each element of <code>myArray</code> (which is declared elsewhere, and is of length 10), and do something with each element:
+<pre>
+  # initialize registers
+  move $t0, $zero
+  li $t1, 10
+loop:
+  # check that we're still in the loop
+  slt $t2, $t0, $t1
+  beq $t2, $zero, after_loop
+
+  # load myArray[$t0] into $t5
+  la $t3, myArray
+  addu $t4, $t3, $t2
+  lw  $t5, 0($t4)
+
+  # do something with myArray[$t0], AKA $t5.
+  # this has been omitted
+
+  # increment counter and go back to the top
+  addiu $t0, $t0, 1
+  j loop
+after_loop:
+  # this is where code after the loop goes  
+</pre>
+        <p>
+          The code above has a bug in it which will cause it not to iterate through the loop correctly.
+          Specifically, <code>$t3</code> won't always hold the value of <code>myArray[$t3]</code>.
+          Two questions follow:
+        </p>
+        <ol>
+          <li>
+            What is wrong with the above code? - it indexes into <code>myArray[$t2]</code> as bytes.
+            This is broken for two reasons:
+            <ol>
+              <li>
+                <code>$t2</code> is either a <code>0</code> or a <code>1</code>, as it is derived from the above <code>slt</code> instruction.
+                This has no relation to <code>$t0</code>, which is what we want.
+              </li>
+              <li>
+                This does not take into account the fact that each element of <code>myArray</code> is four bytes long (each element is a 32 bit word).
+                As such, this will access portions between elements, and treat these portions as distinct words.
+              </li>
+            </ol>
+          </li>
+          <li>
+            A single instruction can be added to this code somewhere which will fix the bug.
+            Which instruction is it, and where does it need to be placed? - <code>sll $t2, $t0, 2</code> needs to be placed immediately after <code>la $t3, myArray</code>.
+          </li>
+        </ol>
+      </li>
+      <li>
+        This isn't a question, but the following example files from the course webpage are all fair game:
+        <ul>
+            access_global.asm<br>
+            print_array1.asm<br>
+            print_array2.asm<br>
+            print_array3.asm<br>
+        </ul>
+      </li>
+    </ol>
+    
+    <h2>MIPS Calling Convention</h2>
+    <p>
+      You should be familiar with the rules in the <a href="../../documentation/calling_convention/calling_convention.html">MIPS calling convention documentation.</a>
+      The following questions all indirectly relate to that document.
+    </p>
+
+    <ol>
+      <li>
+        What's wrong with the MIPS code snippet below, with respect to the MIPS calling convention?
+<pre>
+li $t0, 10         # save 10 into $t0
+jal foo            # call foo
+add $t1, $t0, $t0  # 10 + 10 = 20
+</pre>
+        <p>
+          The above code assumes that the <code>foo</code> function does not change the value of <code>$t0</code>, which it assumes will be <code>10</code> after the call.
+          According to the MIPS calling convention, register <code>$t0</code> isn't preserved across a call, so there is no guarantee that the value of <code>$t0</code> will continue to be <code>10</code> after a call is performed.
+        </p>
+      </li>
+      <li>
+        Consider the C code below:
+<pre>
+int add2(int x, int y) {
+  return x + y;
+}
+</pre>
+        <p>Answer the following questions, which are all related to how the above code behaves with respect to the MIPS calling convention:</p>
+        <ol>
+          <li>When <code>add2</code> is called, in what registers will the values of <code>x</code> and <code>y</code> be initially placed? - <code>$a0</code> and <code>$a1</code>, respectively</li>
+          <li>When <code>add2</code> returns, in what register will its return value (<code>x + y</code>) be placed? - <code>$v0</code></li>
+        </ol>
+      </li>
+      <li>
+        The function <code>bar</code> below is implemented in MIPS assembly, which takes two parameters, which we'll name <code>x</code> and <code>y</code>, respectively.
+        The function is supposed to return the result of <code>(x * y) - (x + y)</code>.
+        However, there is a bug in the function, with respect to the MIPS calling convention.
+        What's wrong with the code, and how could it be fixed?
+<pre>
+bar:
+  mult $a0, $a1
+  mflo $s0
+  add  $s1, $a0, $a1
+  sub  $v0, $s0, $s1
+  jr $ra
+</pre>
+        <p>
+          The above code uses registers <code>$s0</code> and <code>$s1</code>, which are supposed to be preserved across a call according to the MIPS calling convention.
+          As such, in order to safely use <code>$s0</code> and <code>$s1</code>, the code needs to first save their values on the stack, and then later restore their values from the stack just before returning from <code>bar</code>.
+          However, the code above does not do this, so it is buggy.
+          The solution is to either save and restore registers <code>$s0</code> and <code>$s1</code> as described, or use registers <code>$t0</code> and <code>$t1</code> instead, which do not need to be preserved across calls.
+        </p>
+      </li>
+      <li>
+        Consider the function <code>first</code>, below, which calls another function <code>second</code>.
+        <code>second</code> doesn't take any parameters, and it doesn't return anything.
+        There is a bug in the code below.
+        What's wrong with the code, and how could it be fixed?
+<pre>
+first:
+  jal second
+  jr $ra
+</pre>
+        <p>
+          When the <code>jal</code> instruction is used, it will overwrite the value stored in <code>$ra</code> with the return address for the call to <code>second</code>.
+          In doing so, it will overwrite the return address needed for the initial call to <code>first</code>.
+          As such, when <code>first</code> goes to execute <code>jr $ra</code>, instead of jumping to the caller of <code>first</code>, it will jump to where <code>second</code> returned to, which in this case happens to be <code>jr $ra</code>.
+          This will continue for infinity.
+          The solution is to save <code>$ra</code> on the stack before making the call to <code>second</code>, and then restore the value saved on the stack to <code>$ra</code> once the call to <code>second</code> returns.
+        </p>
+      </li>
+      <li>
+        Consider the function <code>third</code>, below, which calls another function <code>fourth</code>.
+        <code>fourth</code> doesn't take any parameters, and it doesn't return anything.
+        There is a bug in the code below.
+        What's wrong with the code, and how could it be fixed?
+<pre>
+third:
+  addiu $sp, $sp, -4
+  sw $ra, 0($sp)
+  jal fourth
+  lw $ra, 0($sp)
+  jr $ra
+</pre>
+
+        <p>
+          The above code fails to deallocate space on the stack after <code>$ra</code> is restored.
+          As such, when <code>third</code> returns, the <code>$sp</code> register will hold a different value than expected.
+          The offsets of all data saved on the stack are now off by 4 (the value <code>$sp</code> is off by), and so anything trying to restore values from the stack will restore the wrong values.
+          This can be easily fixed by adding a <code>addiu $sp, $sp, 4</code> instruction immediately before the <code>jr $ra</code> instruction.
+        </p>
+      </li>
+      <li>
+        Say that the value of <code>$t0</code> needs to be maintained through a call, but we're constrained in that we're not allowed to store <code>$t0</code>'s value in a preserved register (e.g., <code>$s0 - $s7</code>).
+        This can't be done directly, as the MIPS calling convention allows the caller to clobber <code>$t0</code>.
+        However, there is still a way to save the value of <code>$t0</code> somewhere where it can survive the call, <b>without</b> needing to use a preserved register.
+        Where can <code>$t0</code> be saved?
+        How can this be done, specifically with valid MIPS assembly which obeys the MIPS calling convention?
+        <p>
+          The value of <code>$t0</code> can be placed on the stack just before the call, and then restored from the stack immediately after the call.
+          For example, say we are calling a function named <code>func</code>, and we need to save <code>$t0</code> through the call.
+          This can be done like so:
+        </p>
+<pre>
+addiu $sp, $sp, -4
+sw $t0, 0($sp)
+jal func
+lw $t0, 0($sp)
+addiu $sp, $sp, 4
+</pre>
+      </li>
+      <li>
+        This isn't a question, but the following example files from the course webpage are all fair game:
+        <ul>
+            simple_call.asm<br>
+            print_ints.asm<br>
+            add_ints.asm<br>
+            save_registers.asm<br>
+            nested_calls.asm<br>
+            recursive_fibonacci.asm<br>
+        </ul>
+        <p>
+          You will <b>not</b> be asked about tail-recursion.
+        </p>
+      </li>
+    </ol>
+
+    <h2>Basic Circuit Design</h2>
+    <ol>
+      <li>
+        What component is shown below?
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/OR_ANSI_Labelled.svg/120px-OR_ANSI_Labelled.svg.png">
+        <p>An <code>OR</code> gate.</p>
+      </li>
+      <li>
+        What component is shown below?
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/AND_ANSI.svg/100px-AND_ANSI.svg.png">
+        <p>An <code>AND</code> gate.</p>
+      </li>
+      <li>
+        What component is shown below?
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Not-gate-en.svg/128px-Not-gate-en.svg.png">
+        <p>A <code>NOT</code> gate.</p>
+      </li>
+      <li>
+        What component is shown below?
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/XOR_ANSI.svg/100px-XOR_ANSI.svg.png">
+        <p>An <code>XOR</code> gate.</p>
+      </li>
+      <li>
+        Draw the circuit corresponding to the following sum-of-products equation, where <code>!A</code> refers to the negation of variable <code>A</code>, and so on:
+<pre>
+R = !A!B + AB
+</pre>
+<img src="circuit.jpg" style="width:35%">
+      </li>
+      <li>
+        Consider the following sum-of-products equation:
+<pre>
+R = !ABC + ABC + A!B!C
+</pre>
+        <p>Using the above equation, do the following:</p>
+          <ul>
+            <li>Write it as a truth table:<br><img src="truth_table.jpg" style="width:25%;"></li>
+            <li>Simplify it using boolean algebra:<br><img src="boolean_algebra.jpg" style="width:25%;"></li>
+            <li>Simplify it using a Karnaugh map:<br><img src="karnaugh_map.jpg" style="width:30%;"><br><code>R = A!B!C + BC</code></li>
+          </ul>
+      </li>
+    </ol>
+  </body>
+</html>
