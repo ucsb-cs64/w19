@@ -109,7 +109,7 @@ chmod 600 lab1problems.txt partner.txt
   The answers should be placed directly in the file itself.
   All questions must be answered correctly for full credit.
 </p>
-<p>Make sure you save your answers before you exit.
+<p>Make sure you save your answers before you exit.</p>
 
 <p>
   <b>If you partnered with someone, record the email address they are using for the class in <code>partner.txt</code>.</b>
