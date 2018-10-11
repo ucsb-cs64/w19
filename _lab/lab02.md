@@ -338,7 +338,7 @@ jal 0x00400024 [main]
  Do this to confirm the answers you get from inspecting the code.
 </p>
 
-<h3>Step 5: Answer Questions About the Code</h3>
+<h3>Step 5: Answer Questions About the Code (OPTIONAL)</h3>
 <p>
  Answer the questions in <a href="spimtutorial.txt"><code>spimtutorial.txt</code></a>.
  You may find it helpful during this process to use breakpoints and to step through individual instructions, and watching what happens to both the registers and to the <code>Console</code> screen.
