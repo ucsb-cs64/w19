@@ -17,7 +17,6 @@ due: 2018-11-25 23:59:59.00-7
   <li>Draw simple logic circuits on a simulator.</li>
   <li>Create multi-input multiplexers using only 2-input multiplexers.</li>
 </ul>
-<p><b>We will be covering multiplexers and logic simulators in class on Tuesday, 5/22</b></p>
 
 <b>Provided files:</b>
 <ul>
