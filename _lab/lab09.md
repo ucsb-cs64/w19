@@ -265,12 +265,13 @@ cp ~zmatni/public_html/cs64f18/labs/9/partner.txt .
   This is actually expected behavior, as it reflects the fact that first the circuit reads <code>1</code>, and then it moves into a state that reports <code><b>U</b> = 1</code>.
 </p>
 
-<p>This overall task is separated into a series of questions, which may be submitted digitally via turnin:</p>
+<p>This overall task is separated into a series of questions, which will be submitted digitally via turnin as 3 files (sequence.txt, sequence1.jpg OR .pdf, and sequence2.jpg OR .pdf):
+</p>
 <ol>
   <li>
     <p>
       Draw the finite state machine corresponding to this task.
-      If you are submitting this online, put this diagram ito a file named &ldquo;<code>sequence.jpg</code>&rdquo;.
+      Put this state diagram into a file named &ldquo;<code>sequence1.jpg</code>&rdquo; and put the circuit drawing into a file named &ldquo;<code>sequence2.jpg</code>&rdquo;. You may instead turn in sequence1 and sequence2 as scans in PDF format (instead of a JPEG picture).
     </p>
   </li>
   <li>
@@ -307,11 +308,19 @@ cp ~zmatni/public_html/cs64f18/labs/9/partner.txt .
       This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
+  <li>
+    <p>
+      Based on your findings, draw the FSM circuit using D-FFs and combinatorial logic. Make sure you CLEARLY label this diagram.
+    </p>
+  </li>
 </ol>
 
 <p>
   Pay particularly close attention to where transitions should go which move &ldquo;backwards&rdquo; in the FSM.
   That is, it is expected that you'll have transitions which go to previously observed states, and these transitions won't necessarily all return to the same state.
+</p>
+<p>
+  Again, put all the information in the sequence.txt file, the picture (or scan) of the state diagram in sequence1.jpg (or sequence1.pdf, if scanning), and the picture of the circuit in sequence2.jpg (or sequence2.pdf, if scanning).
 </p>
 
 <h2>Turn in Everything Using <code>turnin</code></h2>
@@ -326,7 +335,7 @@ Partner: foo@bar.com
 
 <p>Assuming you are in the <code>cs64/lab9</code> directory you created at the beginning, you can send in your answers <b>with the FSM images and answers</b> via the following command:</p>
 <pre>
-turnin lab9@cs64 display.jpg display.txt sequence.jpg sequence.txt 
+turnin lab9@cs64 display.jpg display.txt sequence1.jpg sequence2.jpg sequence.txt 
 </pre>
 
 <p>
