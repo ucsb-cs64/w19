@@ -14,7 +14,7 @@ due: 2018-12-07 23:59:59.00-7
   That is, you may <b>not</b> work with a partner for this assignment.
 </p>
 <p>
-  When you submit these tasks, you will be asked for your name and username. PLEASE ENTER your correct name <b>(that is, how it appears on the official UCSB lists)</b>and CSIL username (otherwise, it will be difficult for me to assign you your grade). Please do this AT YOUR OWN PERIL.
+  When you submit these tasks, you will be asked for your name and username. PLEASE ENTER your correct name <b>(that is, how it appears on the official UCSB lists)</b>and CSIL username (otherwise, it will be difficult for me to assign you your grade). If you do not use your "official" name and username, you do this AT YOUR OWN PERIL.
 </p>
 
 <h2>Assignment Background</h2>
@@ -42,7 +42,7 @@ due: 2018-12-07 23:59:59.00-7
   <li>Task 2: Identify the Global Impacts of Computer Science in Assorted Domains</li>
 </ul>
 
-<h2><a id="ethics">Task 1: Identify Relevant Code of Ethics Clauses</a></h2>
+<h2>Task 1: Identify Relevant Code of Ethics Clauses</h2>
 <p>
   Read the joint ACM/IEEE-CS code of ethics <a href="https://www.computer.org/cms/Computer.org/Publications/code-of-ethics.pdf">here</a>.
   After you have familiarized yourself with the code of ethics, read <a href="https://docs.google.com/document/d/1Nei10LeZYF3xnzHwek7CKJUNbAG_YiYV2RjDAj-R3bI">these case studies on ethics</a>.
@@ -61,7 +61,7 @@ due: 2018-12-07 23:59:59.00-7
   <li><a href="http://www.amazon.com/Ethics-Information-Technology-George-Reynolds/dp/1285197151">Ethics in Information Technology</a>, a link to a book with an in-depth discussion of ethics as it relates to computing</li>
 </ul>
   
-<h2><a id="society">Task 2: Identify the Global Impacts of Computer Science in Assorted Domains</a></h2>
+<h2>Task 2: Identify the Global Impacts of Computer Science in Assorted Domains</h2>
 <p>
   Watch <a href="https://youtu.be/wLQee_GPOVo">this video</a> from Megan Smith of Google a the 2010 Computer Science & Information Technology Conference.
   Afterwards, go to <a href="https://docs.google.com/forms/d/1OLsHA08AAkZ38wL2JILd-KofwLwR84bknFcPeyFtYcs/viewform">this form</a>, where you will identify the impact of CS in a variety of areas.
