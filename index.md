@@ -6,7 +6,7 @@ title: CS64, Winter 2019, zmatni
 
 ## Course Information
 
-{% include info_list.html %}
+{% include info_list.md %}
 
 
 
