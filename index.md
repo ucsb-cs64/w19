@@ -12,6 +12,8 @@ title: CS64, Winter 2019, zmatni
 {% endfor %}
 </ul>
 
+<h2>Course Information (2nd copy)</h2>
+{% include info_list.html %}
 
 <h2 id="lecture_notes">Lecture Notes and Slides:</h2>
 {% include lecnot_table.html %}
