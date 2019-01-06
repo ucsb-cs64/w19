@@ -11,7 +11,7 @@
 {% for hw in site.hw %}
 
 <tr class={% if hw.ready %}"ready"{% else %}"not-ready"{% endif %} >
-  <td class="simlifiedhw_num"  ><a href="{{hw.pdfurl}}" data-ajax="false">{{ hw.num }}</a></td>
+  <td class="simlifiedhw_num"  ><a href="{{hw.pdfurl | relative_url }}" data-ajax="false">{{ hw.num }}</a></td>
   <td class="simlifiedhw">{{hw.ready}}</td>
   <td class="simlifiedhw_desc" >{{hw.desc }}</td>
   <td class="simlifiedhw_assigned" >{{hw.assigned | date: "%a %m/%d %I:%M%p" }}</td>
