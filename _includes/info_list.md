@@ -1,5 +1,5 @@
-* [Calendar]({{'/info/0.calendar' | relative_url }})
-* [Syllabus]({{'/info/1.syllabus' | relative_url }})
+* [Calendar]({{'/info/calendar' | relative_url }})
+* [Syllabus]({{'/info/syllabus' | relative_url }})
 * [Demo code used in lecture](http://cs.ucsb.edu/~zmatni/cs64f18/demos/)
 * Class grades are on [Gauchospace](https://gauchospace.ucsb.edu)
 * List of [Readings for Class](http://cs.ucsb.edu/~zmatni/cs64f18/documentation/handouts/)
