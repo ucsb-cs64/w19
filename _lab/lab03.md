@@ -19,18 +19,18 @@ due: 2018-10-22 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="MedianNumbers.asm"><code>MedianNumbers.asm</code></a></li>
-  <li><a href="task1_tester.pl"><code>task1_tester.pl</code></a></li>
-  <li><a href="factorial.asm"><code>factorial.asm</code></a></li>
-  <li><a href="task2_tester.pl"><code>task2_tester.pl</code></a></li>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab03/MedianNumbers.asm' | relative_url }}"><code>MedianNumbers.asm</code></a></li>
+  <li><a href="{{'/lab/lab03/task1_tester.pl' | relative_url }}"><code>task1_tester.pl</code></a></li>
+  <li><a href="{{'/lab/lab03/factorial.asm' | relative_url }}"><code>factorial.asm</code></a></li>
+  <li><a href="{{'/lab/lab03/task2_tester.pl' | relative_url }}"><code>task2_tester.pl</code></a></li>
+  <li><a href="{{'/lab/lab03/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <b>Documentation:</b>
 <ul>
-  <li><a href="../documentation/MIPS_reference_card.pdf">MIPS Reference Card</a></li>
-  <li><a href="../documentation/spim.pdf">SPIM Manual</a></li>
-  <li><a href="../documentation/mips_instruction_policy.html">Grading Policies Regarding MIPS Assembly Instructions</a></li>
+  <li><a href="{{'/lab/documentation/MIPS_reference_card.pdf' | relative_url }}">MIPS Reference Card</a></li>
+  <li><a href="{{'/lab/documentation/spim.pdf' | relative_url }}">SPIM Manual</a></li>
+  <li><a href="{{'/lab/documentation/mips_instruction_policy.html' | relative_url }}">Grading Policies Regarding MIPS Assembly Instructions</a></li>
 </ul>
 
 <hr>
@@ -49,7 +49,7 @@ due: 2018-10-22 23:59:59.00-7
 <p>
   You may use any MIPS instructions or psuedoinstructions you want in order to implement these tasks.
   However, you will be somewhat restricted on exams.
-  You may want to read the <a href="../../documentation/mips_instruction_policy.html">grading policies regarding MIPS assembly instructions</a> for more information.
+  You may want to read the <a href="{{'/lab/documentation/mips_instruction_policy.html' | relative_url }}">grading policies regarding MIPS assembly instructions</a> for more information.
 </p>
 
 <p>

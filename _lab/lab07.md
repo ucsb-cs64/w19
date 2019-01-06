@@ -20,8 +20,8 @@ due: 2018-11-25 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="lab7problems.txt"><code>lab7problems.txt</code></a></li>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab07/lab7problems.txt' | relative_url }}"><code>lab7problems.txt</code></a></li>
+  <li><a href="{{'/lab/lab07/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <hr>
@@ -55,7 +55,7 @@ cp ~zmatni/public_html/cs64f18/labs/7/lab7problems.txt ~zmatni/public_html/cs64f
 
 <h2>Answer Questions Regarding Karnaugh Maps and Multiplexers</h2>
 <p>
-  Answer the questions in the provided <a href="lab7problems.txt"><code>lab7problems.txt</code></a> file.
+  Answer the questions in the provided <a href="{{'/lab/lab07/lab7problems.txt' | relative_url }}"><code>lab7problems.txt</code></a> file.
   Note that it is expected that these questions will take a significant amount of time to answer, so you are not expected to be able to finish by the end of the lab period.
 </p>
 

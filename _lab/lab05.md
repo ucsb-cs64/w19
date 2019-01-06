@@ -19,21 +19,21 @@ due: 2018-11-09 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="functions.asm"><code>functions.asm</code></a></li>
-  <li><a href="functions_testing_stub.asm"><code>functions_testing_stub.asm</code></a></li>
-  <li><a href="functions_tester.pl"><code>functions_tester.pl</code></a></li>
-  <li><a href="iterative_max.asm"><code>iterative_max.asm</code></a></li>
-  <li><a href="iterative_max_testing_stub.asm"><code>iterative_max_testing_stub.asm</code></a></li>
-  <li><a href="iterative_max_tester.pl"><code>iterative_max_tester.pl</code></a></li>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab05/functions.asm' | relative_url }}"><code>functions.asm</code></a></li>
+  <li><a href="{{'/lab/lab05/functions_testing_stub.asm' | relative_url }}"><code>functions_testing_stub.asm</code></a></li>
+  <li><a href="{{'/lab/lab05/functions_tester.pl' | relative_url }}"><code>functions_tester.pl</code></a></li>
+  <li><a href="{{'/lab/lab05/iterative_max.asm' | relative_url }}"><code>iterative_max.asm</code></a></li>
+  <li><a href="{{'/lab/lab05/iterative_max_testing_stub.asm' | relative_url }}"><code>iterative_max_testing_stub.asm</code></a></li>
+  <li><a href="{{'/lab/lab05/iterative_max_tester.pl' | relative_url }}"><code>iterative_max_tester.pl</code></a></li>
+  <li><a href="{{'/lab/lab05/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <b>Documentation:</b>
 <ul>
-  <li><a href="../documentation/MIPS_reference_card.pdf">MIPS Reference Card</a></li>
-  <li><a href="../documentation/spim.pdf">SPIM Manual</a></li>
-  <li><a href="../documentation/mips_instruction_policy.html">Grading Policies Regarding MIPS Assembly Instructions</a></li>
-  <li><a href="../documentation/callingconvention/calling_convention.html">MIPS Calling Convention</a></li>
+  <li><a href="{{'/lab/documentation/MIPS_reference_card.pdf' | relative_url }}">MIPS Reference Card</a></li>
+  <li><a href="{{'/lab/documentation/spim.pdf' | relative_url }}">SPIM Manual</a></li>
+  <li><a href="{{'/lab/documentation/mips_instruction_policy.html' | relative_url }}">Grading Policies Regarding MIPS Assembly Instructions</a></li>
+  <li><a href="{{'/lab/documentation/callingconvention/calling_convention.html' | relative_url }}">MIPS Calling Convention</a></li>
 </ul>
 
 <hr>
@@ -52,11 +52,11 @@ due: 2018-11-09 23:59:59.00-7
 <p>
   You may use any MIPS instructions or psuedoinstructions you want in order to implement these tasks.
   However, you will be somewhat restricted on exams.
-  You may want to read the <a href="../documentation/mips_instruction_policy.html">grading policies regarding MIPS assembly instructions</a> for more information.
+  You may want to read the <a href="{{'/lab/documentation/mips_instruction_policy.html' | relative_url }}">grading policies regarding MIPS assembly instructions</a> for more information.
 </p>
 
 <p>
-  Both of these tasks require you to follow the <a href="../documentation/callingconvention/calling_convention.html">MIPS calling convention</a>.
+  Both of these tasks require you to follow the <a href="{{'/lab/documentation/callingconvention/calling_convention.html' | relative_url }}">MIPS calling convention</a>.
   <b>Be sure to actually follow the calling convention; solutions which do not follow the MIPS calling convention will receive no credit!</b>
 </p>
   

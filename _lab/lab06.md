@@ -20,8 +20,8 @@ due: 2018-11-16 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="lab6problems.txt"><code>lab6problems.txt</code></a></li>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab06/lab6problems.txt' | relative_url }}"><code>lab6problems.txt</code></a></li>
+  <li><a href="{{'/lab/lab06/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <b>Documentation:</b>
@@ -56,7 +56,7 @@ cp ~zmatni/public_html/cs64f18/labs/6/lab6problems.txt ~zmatni/public_html/cs64f
 
 <h2>Answer Questions Regarding Boolean Functions</h2>
 <p>
-  Answer the questions in the provided <a href="lab6problems.txt"><code>lab6problems.txt</code></a> file, which all deal with boolean functions.
+  Answer the questions in the provided <a href="{{'/lab/lab06/lab6problems.txt' | relative_url }}"><code>lab6problems.txt</code></a> file, which all deal with boolean functions.
   With the proper background, it is trivial to turn these functions into actual circuits and hardware.
   Note that it is expected that these questions will take a significant amount of time to answer, so you are not expected to be able to finish by the end of the lab period.
 </p>

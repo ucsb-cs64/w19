@@ -21,7 +21,7 @@ due: 2018-12-02 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab08/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
   Given the nature of this lab and that we are right in the last week of classes, working with a partner on this lab is highly recommended.
 </ul>
 
@@ -124,7 +124,7 @@ cp ~zmatni/public_html/cs64f18/labs/8/partner.txt .
 
 <p>To complete this task, you may use <b>only</b> the following components, in unlimited supply:</p>
 <ul>
-  <li><code>AND</code>, <code>OR</code>, <code>XOR</code>, and <code>NOT</code> gates, using the notation shown in the <a href="../../lectures/week6/lecture_1.pdf">week 6 lecture notes</a>.</li>
+  <li><code>AND</code>, <code>OR</code>, <code>XOR</code>, and <code>NOT</code> gates, using the notation shown in the <a href="{{'/lectures/week6/lecture_1.pdf' | relative_url }}">week 6 lecture notes</a>.</li>
   <li>
 2-input multiplexers, which take a selector bit <code>S0</code> and two single-bit input operands <code>A</code> and <code>B</code>, and return a single-bit output <code>Z</code>.
 They should be drawn using the symbol below, provided by <a href="https://en.wikipedia.org/wiki/Multiplexer">Wikipedia</a>:<br><img src="multiplexer.png" style="width:10%;">

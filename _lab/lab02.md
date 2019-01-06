@@ -22,25 +22,25 @@ due: 2018-10-12 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
- <li><a href="lab2problems.txt"><code>lab2problems.txt</code></a></li>
- <li><a href="RandomCode.h"><code>RandomCode.h</code></a></li>
- <li><a href="RandomCode.c"><code>RandomCode.c</code></a></li>
- <li><a href="RandomMain.c"><code>RandomMain.c</code></a></li>
- <li><a href="RandomCodeTester.c"><code>RandomCodeTester.c</code></a></li>
- <li><a href="DecodeCode.h"><code>DecodeCode.h</code></a></li>
- <li><a href="DecodeCode.c"><code>DecodeCode.c</code></a></li>
- <li><a href="DecodeMain.c"><code>DecodeMain.c</code></a></li>
- <li><a href="DecodeCodeTester.c"><code>DecodeCodeTester.c</code></a></li>
- <li><a href="spimtutorial.txt"><code>spimtutorial.txt</code></a></li>
- <li><a href="mipsdemo.asm"><code>mipsdemo.asm</code></a></li>
- <li><a href="partner.txt"><code>partner.txt</code></a></li>
+ <li><a href="{{'/lab/lab02/lab2problems.txt' | relative_url }}"><code>lab2problems.txt</code></a></li>
+ <li><a href="{{'/lab/lab02/RandomCode.h' | relative_url }}"><code>RandomCode.h</code></a></li>
+ <li><a href="{{'/lab/lab02/RandomCode.c' | relative_url }}"><code>RandomCode.c</code></a></li>
+ <li><a href="{{'/lab/lab02/RandomMain.c' | relative_url }}"><code>RandomMain.c</code></a></li>
+ <li><a href="{{'/lab/lab02/RandomCodeTester.c' | relative_url }}"><code>RandomCodeTester.c</code></a></li>
+ <li><a href="{{'/lab/lab02/DecodeCode.h' | relative_url }}"><code>DecodeCode.h</code></a></li>
+ <li><a href="{{'/lab/lab02/DecodeCode.c' | relative_url }}"><code>DecodeCode.c</code></a></li>
+ <li><a href="{{'/lab/lab02/DecodeMain.c' | relative_url }}"><code>DecodeMain.c</code></a></li>
+ <li><a href="{{'/lab/lab02/DecodeCodeTester.c' | relative_url }}"><code>DecodeCodeTester.c</code></a></li>
+ <li><a href="{{'/lab/lab02/spimtutorial.txt' | relative_url }}"><code>spimtutorial.txt</code></a></li>
+ <li><a href="{{'/lab/lab02/mipsdemo.asm' | relative_url }}"><code>mipsdemo.asm</code></a></li>
+ <li><a href="{{'/lab/lab02/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <b>Documentation:</b>
 <ul>
- <li><a href="./documentation/MIPS_reference_card.pdf">MIPS Reference Card</a></li>
- <li><a href="./documentation/spim.pdf">SPIM Manual</a></li>
- <li><a href="./documentation/mips_instruction_policy.html">Grading Policies Regarding MIPS Assembly Instructions</a></li>
+ <li><a href="{{'/lab/lab02/documentation/MIPS_reference_card.pdf' | relative_url }}">MIPS Reference Card</a></li>
+ <li><a href="{{'/lab/lab02/documentation/spim.pdf' | relative_url }}">SPIM Manual</a></li>
+ <li><a href="{{'/lab/lab02/documentation/mips_instruction_policy.html' | relative_url }}">Grading Policies Regarding MIPS Assembly Instructions</a></li>
 </ul>
 
 <hr>
@@ -89,7 +89,7 @@ cp ~zmatni/public_html/cs64f18/labs/2/*.txt ~zmatni/public_html/cs64f18/labs/2/*
 
 <h2><a id="addition">Task 1: Binary Addition and Bit-Level Operations</a></h2>
 <p>This task entails answering a series of questions focused on bit-level operations.</p>
-<p>Open the file <a href="lab2problems.txt">lab2problems.txt</a> using an editor and answer the questions, just as with Lab 1.</p>
+<p>Open the file <a href="{{'/lab/lab02/lab2problems.txt' | relative_url }}">lab2problems.txt</a> using an editor and answer the questions, just as with Lab 1.</p>
 
 <h2><a id="random">Task 2: Bitwise Operations in C/C++</a></h2>
 <p>
@@ -258,7 +258,7 @@ gcc Decode*.c
  You are now ready for MIPS!
  We will use a simulator <a href="http://spimsimulator.sourceforge.net/"><code>QtSpim</code></a> to run our MIPS programs in this class.
 
- For this task, you will need to fill out the <a href="spimtutorial.txt"><code>spimtutorial.txt</code></a> questions.
+ For this task, you will need to fill out the <a href="{{'/lab/lab02/spimtutorial.txt' | relative_url }}"><code>spimtutorial.txt</code></a> questions.
  You may want to take a look at these questions before you start running the simulator, just to get a handle on exactly what it is you will need to learn.
 </p>
 
@@ -340,7 +340,7 @@ jal 0x00400024 [main]
 
 <h3>Step 5: Answer Questions About the Code (OPTIONAL)</h3>
 <p>
- Answer the questions in <a href="spimtutorial.txt"><code>spimtutorial.txt</code></a>.
+ Answer the questions in <a href="{{'/lab/lab02/spimtutorial.txt' | relative_url }}"><code>spimtutorial.txt</code></a>.
  You may find it helpful during this process to use breakpoints and to step through individual instructions, and watching what happens to both the registers and to the <code>Console</code> screen.
  The <code>Console</code> screen acts as an input/output terminal to your program.
  Just as with a normal terminal, if it is waiting for input, it will not continue until you type something into that screen and press return.
@@ -354,10 +354,10 @@ jal 0x00400024 [main]
 <ul>
  <li>
    For understanding the MIPS instructions themselves, it may be helpful to consult the MIPS reference card in the front of the textbook.
-   A digital copy is also available <a href="../../documentation/MIPS_reference_card.pdf">here</a>.
+   A digital copy is also available <a href="{{'/lab/documentation/MIPS_reference_card.pdf' | relative_url }}">here</a>.
  </li>
  <li>For a basic understanding of how the <code>syscall</code> instruction works in SPIM (which is used by QtSpim), see <a href="https://www.doc.ic.ac.uk/lab/secondyear/spim/node8.html">this page</a>.</li>
- <li>For a detailed amount of information regarding SPIM (which is used by QtSpim), particularly the terminal interface, you may want to consult <a href="../../documentation/spim.pdf">this manual</a>.</li>
+ <li>For a detailed amount of information regarding SPIM (which is used by QtSpim), particularly the terminal interface, you may want to consult <a href="{{'/lab/documentation/spim.pdf' | relative_url }}">this manual</a>.</li>
  <li>
    For general background specific to QtSpim, a nice tutorial can be found <a href="https://www.lri.fr/~de/QtSpim-Tutorial.pdf">here</a>.
    Overall, there are a <i>lot</i> of QtSpim tutorials out there if you are interested; a quick Google search of &ldquo;qtspim tutorial&rdquo; reveals quite a bunch.

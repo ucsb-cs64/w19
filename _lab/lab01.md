@@ -22,8 +22,8 @@ due: 2018-10-05 23:59:59.00-7
 </ul>
 <b>Provided files:</b>
 <ul>
-  <li><a href="lab1problems.txt"><code>lab1problems.txt</code></a></li>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab01/lab1problems.txt' | relative_url }}"><code>lab1problems.txt</code></a></li>
+  <li><a href="{{'/lab/lab01/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 <hr>
 <h1>Step by Step Instructions</h1>
@@ -70,7 +70,7 @@ pwd
 
 <h2>Step 4: Get the Provided Files Into Your Work Directory</h2>
 <p>
-  The provided <a href="lab1problems.txt"><code>lab1problems.txt</code></a> and <a href="partner.txt"><code>partner.txt</code></a> files need to make their way into the directory you just created.
+  The provided <a href="{{'/lab/lab01/lab1problems.txt' | relative_url }}"><code>lab1problems.txt</code></a> and <a href="{{'/lab/lab01/partner.txt' | relative_url }}"><code>partner.txt</code></a> files need to make their way into the directory you just created.
   There are a number of ways to do this.
   Perhaps the simplest thing to do is to copy the file directly from the website, like so:
 </p>
@@ -99,8 +99,8 @@ chmod 600 lab1problems.txt partner.txt
   If not, you may refer to one of the following links for a very basic tutorial of the corresponding text editor:
 </p>
 <ul>
-  <li><a href="emacs_tutorial.html"><code>emacs</code> tutorial</a></li>
-  <li><a href="vi_tutorial.html"><code>vi</code> tutorial</a></li>
+  <li><a href="{{'/lab/lab01/emacs_tutorial.html' | relative_url }}"><code>emacs</code> tutorial</a></li>
+  <li><a href="{{'/lab/lab01/vi_tutorial.html' | relative_url }}"><code>vi</code> tutorial</a></li>
 </ul>
 <p> There are MANY more tutorials online - go ahead and Google them, if you like. </p>
  <p>

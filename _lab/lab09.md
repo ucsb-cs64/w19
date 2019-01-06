@@ -19,7 +19,7 @@ due: 2018-12-07 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab09/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <!-- DOCUMENTATION -->
@@ -171,7 +171,7 @@ cp ~zmatni/public_html/cs64f18/labs/9/partner.txt .
 </ol>
 
 <p>
-  To help with questions 1-3, a solution to a very similar problem is provided <a href="display_example.jpg">here</a>.
+  To help with questions 1-3, a solution to a very similar problem is provided <a href="{{'/lab/lab09/display_example.jpg' | relative_url }}">here</a>.
   In this example, the FSM alternates between displaying <code>1</code> and <code>7</code>.
   The diagram has these major components:
 </p>

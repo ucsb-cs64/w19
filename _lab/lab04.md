@@ -19,16 +19,16 @@ due: 2018-10-26 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
-  <li><a href="lab4funcs.asm"><code>lab4funcs.asm</code></a></li>
-  <li><a href="swap_array.asm"><code>swap_array.asm</code></a></li>
-  <li><a href="partner.txt"><code>partner.txt</code></a></li>
+  <li><a href="{{'/lab/lab04/lab4funcs.asm' | relative_url }}"><code>lab4funcs.asm</code></a></li>
+  <li><a href="{{'/lab/lab04/swap_array.asm' | relative_url }}"><code>swap_array.asm</code></a></li>
+  <li><a href="{{'/lab/lab04/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
 <b>Documentation:</b>
 <ul>
-  <li><a href="../documentation/MIPS_reference_card.pdf">MIPS Reference Card</a></li>
-  <li><a href="../documentation/spim.pdf">SPIM Manual</a></li>
-  <li><a href="../documentation/mips_instruction_policy.html">Grading Policies Regarding MIPS Assembly Instructions</a></li>
+  <li><a href="{{'/labs/documentation/MIPS_reference_card.pdf' | relative_url }}">MIPS Reference Card</a></li>
+  <li><a href="{{'/labs/documentation/spim.pdf' | relative_url }}">SPIM Manual</a></li>
+  <li><a href="{{'/labs/documentation/mips_instruction_policy.html' | relative_url }}">Grading Policies Regarding MIPS Assembly Instructions</a></li>
 </ul>
 
 <hr>
@@ -47,7 +47,7 @@ due: 2018-10-26 23:59:59.00-7
 <p>
   You may use any MIPS instructions or psuedoinstructions you want in order to implement these tasks.
   However, you will be somewhat restricted on exams.
-  You may want to read the <a href="../../documentation/mips_instruction_policy.html">grading policies regarding MIPS assembly instructions</a> for more information.
+  You may want to read the <a href="{{'/labs/documentation/mips_instruction_policy.html' | relative_url }}">grading policies regarding MIPS assembly instructions</a> for more information.
 </p>
 
 <p>
@@ -312,7 +312,7 @@ while (x != 4) {
   Remember that the program we run it on will have different global declarations.
 </p>
 <p>
-  In addition, <a href="index.html#overflow">the point made regarding the practical distinction between <code>add</code>/<code>addi</code> and <code>addu</code>/<code>addiu</code></a> in the previous task is still relevant for this task.
+  In addition, <a href="{{'#overflow' | relative_url }}">the point made regarding the practical distinction between <code>add</code>/<code>addi</code> and <code>addu</code>/<code>addiu</code></a> in the previous task is still relevant for this task.
   Correct implementations <b>must</b> utilize <b>both</b> forms, and in the proper manner (that is, <code>addu</code>/<code>addiu</code> for memory addresses and other unsigned things, and <code>add</code>/<code>addi</code> for signed values).
 </p>
 <p>
@@ -332,7 +332,7 @@ Partner: foo@bar.com
 </pre>
 <p>If you did not partner with anyone, you do not need to (and should not) edit <code>partner.txt</code>.</p>
 
-<p>Assuming you are in the <code>cs64/lab4</code> directory you created at the beginning, you can send in your answers via the following command:</p>
+<p>Assuming you are in the <code>cs64/lab</code> directory you created at the beginning, you can send in your answers via the following command:</p>
 <pre>
 turnin lab4@cs64 lab4funcs.asm swap_array.asm partner.txt
 </pre>
