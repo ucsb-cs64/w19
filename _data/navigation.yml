@@ -23,5 +23,8 @@ offering_links:
     url: /lectures_list/
   - title: Labs
     url: /lab_list/
+  - title: Calendar
+    url: /info/calendar
+
 
 
