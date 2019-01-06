@@ -7,6 +7,6 @@ permalink: "/info_list/"
 
 ## Course Information
 
-{% include info_list.html %}
+{% include info_list.md %}
 
 
