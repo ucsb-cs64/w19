@@ -34,7 +34,7 @@ cal_dates: >
   [
     {"label":"W19 1st day of instruction", "date":"2019-01-07" },	
     {"label":"Univ Holiday", "date":"2019-01-21" },
-    {"label":"Univ Holiday", "date":"2019-12-18" },
+    {"label":"Univ Holiday", "date":"2019-02-18" },
     {"label":"W19 instruction ends", "date":"2019-03-15" },
     {"label":"W19 finals start", "date":"2019-03-18" },
     {"label":"W19 finals end", "date":"2019-03-22" },
