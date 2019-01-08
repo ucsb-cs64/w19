@@ -6,7 +6,7 @@ title: CS64, Winter 2019, zmatni
 
 ## Prof. Ziad Matni
 
-## Course Information
+## <span style="color:green">Course Information</span>
 
 {% include info_list.md %}
 
