@@ -34,6 +34,6 @@ Thu. starting at 9 am, 10 am, 11 am, PHELP 3525, ATTENDANCE MANDATORY.<br/>
 <a href="http://cs.ucsb.edu/~zmatni/syllabi/CS64W19_syllabus.pdf" target="blank">Full Class Syllabus</a>
 </font>
 
-<br\>
-<br\>
+<p></p>
+
 </div>
