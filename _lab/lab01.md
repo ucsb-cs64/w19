@@ -4,11 +4,11 @@ num: lab01
 ready: true
 desc: "CSIL Logistics and Binary Representation"
 assigned: 2019-01-10 08:00:00.00-7
-due: 2019-01-14 23:59:59.00-7
+due: 2019-01-15 23:59:59.00-7
 ---
 <h1>Lab 1: Logistics and Binary Representation</h1>
 <hr>
-<p><b>Due Monday, January 10th at 11:59:59 PM</b></p>
+<p><b>Due Tuesday, January 15th at 11:59:59 PM</b></p>
 
 <h2>Goals for This Week</h2>
 <p>By the time you have completed this work, you should be able to:</p>
