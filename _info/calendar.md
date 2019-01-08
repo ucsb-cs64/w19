@@ -1,5 +1,5 @@
 ---
-title: 0.Calendar
+title: Calendar
 layout: calendar
 ---
 

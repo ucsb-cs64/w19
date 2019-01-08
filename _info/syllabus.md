@@ -1,5 +1,5 @@
 ---
-title: "1.Syllabus, CMPSC 64, Winter 2019"
+title: "Syllabus, CMPSC 64, Winter 2019"
 layout: handout
 ready: true
 ---
@@ -19,10 +19,10 @@ Office: SSMS 4409<br/><br/>
 * **Piazza Site**: [piazza.com/ucsb/winter2019/cs64](https://www.piazza.com/ucsb/winter2019/cs64){: target="_blank"}<br/>
 * **TAs/Graders and their Office Hours**:<br/>
 
-| <b>TA</b>         | <b>Email</b>               | <b>Open Lab Hours</b>  |
+| <b>TA</b>         | <b>Email</b>               | <b>Office Hours</b>  |
 |-------------------|----------------------------|------------------------|
-| Bay-Yuan Hsu      | <bhsu@umail.ucsb.edu>      | |
-| Shiyu Ji          | <shiyuji@umail.ucsb.edu>   | |
+| Bay-Yuan Hsu      | <bhsu@umail.ucsb.edu>      | Fri. 11 AM - 1 PM, Trailer 936 |
+| Shiyu Ji          | <shiyuji@umail.ucsb.edu>   | Fri. 3 PM - 5 PM, Trailer 936 |
 
 * **Lab**: (50 minute sections)<br/>
 Thu. starting at 9 am, 10 am, 11 am, PHELP 3525, ATTENDANCE MANDATORY.<br/>
