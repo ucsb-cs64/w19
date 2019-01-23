@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab03
-ready: false
+ready: true
 desc: "Basic MIPS Operations"
 assigned: 2019-01-24 08:00:00.00-7
 due: 2018-01-28 23:59:59.00-7
