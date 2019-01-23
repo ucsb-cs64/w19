@@ -73,8 +73,9 @@ cp ~zmatni/public_html/cs64w19/labs/3/hello.asm ~zmatni/public_html/cs64w19/labs
 <h2>Task 1: Arithmetic Exercise</h2>
 <p>
   You will write an assembly program that will prompt the user for 3 inputs (let's abstractly call them
-  a, b, and c) without a leading string. It will then calculate the value of:  <code>2*(a + b) - 3*c</code>. 
-  You can ONLY use the `mult` instruction ONCE!
+  a, b, and c) without a leading string. It will then calculate the value of:  <code>2*(a + b) - 3*c</code>.</p>
+<p>
+  You can ONLY use the <code>mult<code> instruction ONCE!
   (You will lose half the points for this task if you do not follow this rule).
 </p>
 <p>
