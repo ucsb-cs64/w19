@@ -73,10 +73,11 @@ cp ~zmatni/public_html/cs64w19/labs/3/hello.asm ~zmatni/public_html/cs64w19/labs
 <h2>Task 1: Arithmetic Exercise</h2>
 <p>
   You will write an assembly program that will prompt the user for 3 inputs (let's abstractly call them
-  a, b, and c) without a leading string. It will then calculate the value of:  `2*(a + b) - 3*c`. 
+  a, b, and c) without a leading string. It will then calculate the value of:  <code>2*(a + b) - 3*c</code>. 
   You can ONLY use the `mult` instruction ONCE!
   (You will lose half the points for this task if you do not follow this rule).
 </p>
+<p>
   A sample run of this program will look like this, with user input in <b>bold</b>. Please note that when the answer is given, there is NO expectation of a new line:
 </p>
 <pre>
@@ -115,7 +116,7 @@ User chose 42. But is it the right answer?!
 <p>
   Remember what syscall codes you have to use for std input, std output for either 
   integers and strings, and program exit. When printing out strings, remember that you have
-  to first define them under the `.data` directive.
+  to first define them under the <code>.data</code> directive.
 </p>
 
 <p>
