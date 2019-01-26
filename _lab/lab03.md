@@ -16,7 +16,7 @@ due: 2018-01-28 23:59:59.00-7
 <b>Provided files:</b>
 <ul>
   <li><a href="{{'/lab/lab03/Arithmetic.asm' | relative_url }}"><code>Arithmetic.asm</code></a></li>
-  <li><a href="{{'/lab/lab03/HelloWorld.asm' | relative_url }}"><code>hello.asm</code></a></li>
+  <li><a href="{{'/lab/lab03/hello.asm' | relative_url }}"><code>hello.asm</code></a></li>
   <li><a href="{{'/lab/lab03/partner.txt' | relative_url }}"><code>partner.txt</code></a></li>
 </ul>
 
