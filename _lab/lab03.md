@@ -4,7 +4,7 @@ num: lab03
 ready: true
 desc: "Basic MIPS Operations"
 assigned: 2019-01-24 08:00:00.00-7
-due: 2018-01-28 23:59:59.00-7
+due: 2019-01-28 23:59:59.00-7
 ---
 <h1>Lab 3: MIPS Instructions for Basic Arithmetic and Using Standard I/O</h1>
 <hr>
