@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab04
-ready: false
+ready: true
 desc: "MIPS Control Instructions"
 assigned: 2019-01-31 08:00:00.00-7
 due: 2018-02-04 23:59:59.00-7
