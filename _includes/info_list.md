@@ -5,7 +5,7 @@
 * List of [Readings for Class](http://cs.ucsb.edu/~zmatni/cs64w19/documentation/handouts/)
 * <i class="far fa-file-pdf"></i> [MIPS Reference Card PDF Link]({{ '/info/MIPS_reference_card.pdf' | relative_url }})
 * [MIPS Calling Convention]({{'/info/calling_convention' | relative_url }})
-* Practice Exams coming soon.
+* [Midterm Practice Exam]({{'/info/midtermPE' | relative_url }})
 
 <!---
    * <i class="far fa-file-pdf"></i> [Midterm]({{'/info/PracticeMidtermExam.pdf' | relative_url }})
