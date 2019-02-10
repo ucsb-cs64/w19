@@ -739,7 +739,7 @@ doSomething:
   lw $s1, 4($sp)
   lw $s0, 0($sp)
   addiu $sp, $sp, 16
-  jal $ra
+  jr $ra
 </pre>
 <p>
       The above code now utilizes registers <code>$s0 - $s7</code> in order to have values effectively survive past the calls to <code>subTwo</code>.
