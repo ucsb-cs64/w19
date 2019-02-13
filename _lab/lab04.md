@@ -4,11 +4,11 @@ num: lab04
 ready: true
 desc: "MIPS Control Instructions"
 assigned: 2019-01-31 08:00:00.00-7
-due: 2018-02-04 23:59:59.00-7
+due: 2018-02-05 23:59:59.00-7
 ---
 <h1>Lab 4: MIPS Control Instructions</h1>
 <hr>
-<p>Due Monday, February 4th</p>
+<p>Due Monday, February 5th</p>
 
 <h2>Goals for This Week</h2>
 <p>By the time you have completed this work, you should be able to:</p>
