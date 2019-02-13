@@ -6,6 +6,7 @@ desc: "MIPS Calling Convention"
 assigned: 2019-02-14 08:00:00.00-7
 due: 2019-02-20 23:59:59.00-7
 ---
+<div markdown="1">
 <h1>Lab 5: MIPS Calling Convention</h1>
 <hr>
 <p>Due *WEDNESDAY*, FEB. 20th at 11:59:59 PM</p>
@@ -19,6 +20,7 @@ due: 2019-02-20 23:59:59.00-7
 
 <b>Provided files:</b>
 <ul>
+  <li><a href="{{'/lab/lab05/swap_array.asm' | relative_url }}"><code>swap_array.asm</code></a></li>
   <li><a href="{{'/lab/lab05/functions.asm' | relative_url }}"><code>functions.asm</code></a></li>
   <li><a href="{{'/lab/lab05/functions_testing_stub.asm' | relative_url }}"><code>functions_testing_stub.asm</code></a></li>
   <li><a href="{{'/lab/lab05/functions_tester.pl' | relative_url }}"><code>functions_tester.pl</code></a></li>
@@ -78,10 +80,11 @@ mkdir lab5
 <p>Now copy over all of the files necessary for this week's tasks:</p>
 <pre>
 cp ~zmatni/public_html/cs64w19/labs/5/swap_array.asm . ~zmatni/public_html/cs64w19/labs/5/functions.asm ~zmatni/public_html/cs64w19/labs/5/functions_testing_stub.asm ~zmatni/public_html/cs64w19/labs/5/functions_tester.pl ~zmatni/public_html/cs64w19/labs/5/iterative_max.asm ~zmatni/public_html/cs64w19/labs/5/iterative_max_testing_stub.asm ~zmatni/public_html/cs64w19/labs/5/iterative_max_tester.pl ~zmatni/public_html/cs64w19/labs/5/partner.txt .
+
 chmod +x ./*
 </pre>
 <p>
-  Note the use of the trailing <code>.</code> in the above command, which stipulates that the specified files should be copied into the current directory. Also note that you may have to change file permissions once you copy them over using the <pre>chmod</pre> command.
+  Note the use of the trailing <code>.</code> in the above command, which stipulates that the specified files should be copied into the current directory. Also note that you may have to change file permissions once you copy them over using the <code>chmod</code> command.
 </p>
 
 <h2><a id="swap">Task 1: Swapping Array Contents</a></h2>
@@ -363,3 +366,4 @@ turnin lab5@cs64 swap_array.asm functions.asm iterative_max.asm partner.txt
   Copyright 2018, Ziad Matni, CS Dept, UC Santa Barbara. Adapted from work by Diana Franklin and Kyle Dewey. Permission to copy for non-commercial, non-profit, educational purposes granted, provided appropriate credit is given;  all other rights reserved.
   </font></p>
 </blockquote>
+</div>
