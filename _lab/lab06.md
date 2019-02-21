@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab06
-ready: false
+ready: true
 desc: "Intro to Digital Logic"
 assigned: 2019-02-21 08:00:00.00-7
 due: 2019-02-25 17:00:00.00-7
