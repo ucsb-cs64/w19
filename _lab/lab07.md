@@ -1,6 +1,6 @@
 ---
 layout: lab
-num: lab08
+num: lab07
 ready: true
 desc: "Combinatorial + Sequential Logic Design"
 assigned: 2019-02-28 08:00:00.00-7
