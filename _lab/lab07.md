@@ -4,11 +4,11 @@ num: lab07
 ready: true
 desc: "Combinatorial + Sequential Logic Design"
 assigned: 2019-02-28 08:00:00.00-7
-due: 2018-03-06 17:00:00.00-7
+due: 2019-03-06 17:00:00.00-7
 ---
 <h1>Lab 7: Combinatorial + Sequential Logic Design</h1>
 <hr>
-<p><font color='red'><b>Due Wednesday, Mar. 2nd, at 5:00 PM as a PAPER COPY to be dropped-off at HFH.</b></font> See further instructions at the end of this page.</p>
+<p><font color='red'><b>Due Wednesday, Mar. 6th, at 5:00 PM as a PAPER COPY to be dropped-off at HFH.</b></font> See further instructions at the end of this page.</p>
 
 <h2>Goals for This Week</h2>
 <p>By the time you have completed this work, you should be able to:</p>
