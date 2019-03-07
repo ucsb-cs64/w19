@@ -1,6 +1,6 @@
 ---
 layout: lab
-num: lab09
+num: lab08
 ready: true
 desc: "Finite State Machines"
 assigned: 2019-03-07 08:00:00.00-7
