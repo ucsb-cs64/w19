@@ -113,15 +113,12 @@ due: 2019-03-13 23:59:59.00-7
   <li>
     <p>
       Draw the finite state machine corresponding to this task.
-      If you are submitting this online, put this diagram into a file named &ldquo;<code>display.jpg</code>&rdquo;.
     </p>
   </li>
   <li>
     <p>
       How many latches/flip-flops do you need to implement this state machine?
       (Hint: this corresponds to the number of bits necessary in order to encode all possible states uniquely.)
-      If you are submitting this online, put this into a file named &ldquo;<code>display.txt</code>&rdquo;.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
@@ -130,24 +127,18 @@ due: 2019-03-13 23:59:59.00-7
       Be sure to label your states in binary.
       Your table should have inputs corresponding to whatever state you are in.
       The output corresponds to the next state to enter for a given input state, along with the values for the seven segment display.
-      If you are submitting this online, add this to your &ldquo;<code>display.txt</code>&rdquo; file.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
     <p>
       Using a Karnaugh map, determine the minimal sum-of-products formula corresponding to output <code>A</code> (corresponding to input <code>A</code> of the seven-segment display.
       Where appropriate, use <i>don't cares</i> in the map (note that there may be no appropriate uses of <i>don't cares</i>).
-      If you are submitting this online, add this to your &ldquo;<code>display.txt</code>&rdquo; file.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
     <p>
       Using a Karnaugh map, determine the minimal sum-of-products formula corresponding to the rightmost bit of the next state.
       Where appropriate, use <i>don't cares</i> in the map (note that there may be no appropriate uses of <i>don't cares</i>).
-      If you are submitting this online, add this to your &ldquo;<code>display.txt</code>&rdquo; file.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
 </ol>
@@ -260,8 +251,6 @@ due: 2019-03-13 23:59:59.00-7
     <p>
       How many latches/flip-flops do you need to implement this state machine?
       (Hint: this corresponds to the number of bits necessary in order to encode all possible states uniquely.)
-      If you are submitting this online, put this into a file named &ldquo;<code>sequence.txt</code>&rdquo;.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
@@ -270,24 +259,18 @@ due: 2019-03-13 23:59:59.00-7
       Be sure to label your states in binary.
       Your table should have inputs corresponding to whatever state you are in, along with <code><b>I</b></code>.
       The output corresponds to the next state to enter for a given input state, along with <code><b>U</b></code>.
-      If you are submitting this online, add this to your &ldquo;<code>sequence.txt</code>&rdquo; file.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
     <p>
       Using a Karnaugh map, determine the minimal sum-of-products formula corresponding to output <code>U</code>.
       Where appropriate, use <i>don't cares</i> in the map (note that there may be no appropriate uses of <i>don't cares</i>).
-      If you are submitting this online, add this to your &ldquo;<code>sequence.txt</code>&rdquo; file.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
     <p>
       Using a Karnaugh map, determine the minimal sum-of-products formula corresponding to the rightmost bit of the next state.
       Where appropriate, use <i>don't cares</i> in the map (note that there may be no appropriate uses of <i>don't cares</i>).
-      If you are submitting this online, add this to your &ldquo;<code>sequence.txt</code>&rdquo; file.
-      This will be read by hand, so don't worry about the formatting (as long as it is clear and unambiguous).
     </p>
   </li>
   <li>
