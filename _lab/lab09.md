@@ -44,7 +44,7 @@ due: 2019-03-17 23:59:59.00-7
 
 <h2>Task 1: Identify Relevant Code of Ethics Clauses</h2>
 <p>
-  Read the joint ACM/IEEE-CS code of ethics <a href="https://www.computer.org/cms/Computer.org/Publications/code-of-ethics.pdf">here</a>.
+  Read the joint ACM/IEEE-CS code of ethics <a href="https://ethics.acm.org/code-of-ethics/software-engineering-code/">here</a>.
   After you have familiarized yourself with the code of ethics, read <a href="https://docs.google.com/document/d/1Nei10LeZYF3xnzHwek7CKJUNbAG_YiYV2RjDAj-R3bI">these case studies on ethics</a>.
   From there, go to <a href="https://docs.google.com/forms/d/1_J2yJi0rreFNcEhYeVDLlmlJulvmd28_J4q7OiYvVl8/viewform">this form</a>, where you will identify which clauses from the code of ethics are more relevant to each case study.
 </p>
