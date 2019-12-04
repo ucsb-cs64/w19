@@ -13,8 +13,6 @@ title: CS64, Winter 2019, zmatni
 
 {% include info_list.md %}
 
-
----------------------
 Questions? Post them on Piazza!
 
 ## Lecture Notes and Slides
